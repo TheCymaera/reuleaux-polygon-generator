@@ -18,6 +18,7 @@ import {} from "helion/AspectRatio.js";
 import {} from "helion/Stack.js";
 import {} from "helion/ColorPickerField.js";
 import {} from "helion/FilledButton.js";
+import {} from "helion/Intangible.js";
 
 import { fa5_solid_angleLeft, fa5_solid_cog, fa5_solid_download, fa5_solid_info, fa5_solid_share, fa5_solid_times } from "fontawesome-svgs";
 
