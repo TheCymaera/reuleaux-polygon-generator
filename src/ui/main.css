@@ -1,0 +1,53 @@
+.infoDialog {
+	opacity: 1;
+	transition: opacity .2s ease;
+	will-change: opacity;
+}
+
+body:not([data-info-dialog-opened]) .infoDialog {
+	opacity: 0;
+	pointer-events: none;
+}
+
+.actionButtons {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: start;
+	grid-gap: .5em;
+	padding: .5em;
+}
+
+helion-panel {
+	padding: .5em;
+}
+
+svg {
+	width: 1.5em;
+	height: 1em;
+	fill: currentColor;
+}
+
+
+#manualDrawContainer > * {
+	display: block;
+	margin-bottom: .5em;
+}
+
+:root[data-manual-draw] #autoDrawContainer {
+	display: none;
+}
+
+:root:not([data-manual-draw]) #manualDrawContainer {
+	display: none;
+}
+
+.inline-field-container {
+	display: flex;
+	align-items: center;
+	gap: .5em;
+}
+
+.inline-field-container > * {
+	cursor: pointer;
+}

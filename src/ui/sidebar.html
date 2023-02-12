@@ -1,0 +1,126 @@
+<h2>Draw</h2>
+
+<label class="inline-field-container">
+	<div>
+		<input type="checkbox" class="helion-toggle-switch" id="manualDraw"/> 
+		<span></span>
+	</div>
+
+	<span>Manual</span>
+</label>
+
+<div id="autoDrawContainer">
+	<label class="inline-field-container">
+		<div>
+			<input type="checkbox" class="helion-checkbox" id="autoDrawPolygon" checked/>
+			<span></span>
+		</div>
+		<span>Polygon</span>
+	</label>
+	
+	<label class="inline-field-container">
+		<div>
+			<input type="checkbox" class="helion-checkbox" id="autoDrawCircles" checked/>
+			<span></span>
+		</div>
+		<span>Circles</span>
+	</label>
+	
+	<label class="inline-field-container">
+		<div>
+			<input type="checkbox" class="helion-checkbox" id="autoDrawArcs" checked/>
+			<span></span>
+		</div>
+		<span>Arcs</span>
+	</label>
+</div>
+
+<div id="manualDrawContainer" style="padding-left: .5em;">
+	<button class=helion-filled-button id="drawPolygon">Polygon</button>
+	<button class=helion-filled-button id="drawCircles">Circles</button>
+	<button class=helion-filled-button id="drawArcs">Arcs</button>
+	<button class=helion-filled-button id="clear">Clear</button>
+</div>
+
+<br/>
+
+<h2>Geometry</h2>
+
+<label>
+	<div>Sides</div>
+	<input type="number" class="helion-outlined-text-field" id="sides" value="3" step="2" />
+	<small>(Enter an odd number for a shape of constant width)</small>
+</label>
+
+<label>
+	<div>Circumradius</div>
+	<input type="number" class="helion-outlined-text-field" id="circumradius" value="100" />
+</label>
+
+<label>
+	<div>Orientation <small>(Degrees)</small></div>
+	<input type="number" class="helion-outlined-text-field" id="orientation" value="0" />
+</label>
+
+<label>
+	<div>Extension</div>
+	<input type="number" class="helion-outlined-text-field" id="extension" value="0" />
+</label>
+<br/>
+
+<h2>Display</h2>
+
+<label>
+	<div>Resolution</div>
+	<input type="number" class="helion-outlined-text-field" id="resolution" value="1000"/>
+</label>
+
+<label>
+	<div>Line Width</div>
+	<input type="number" class="helion-outlined-text-field" id="lineWidth" value="10"/>
+</label>
+
+<label class="inline-field-container">
+	<input type="color" class="helion-color-picker-field" id="polygonColor" value="#000000">
+	<span>Polygon Color</span>
+</label>
+
+<label class="inline-field-container">
+	<input type="color" class="helion-color-picker-field" id="circleColor" value="#f00000">
+	<span>Circle Color</span>
+</label>
+
+<label class="inline-field-container">
+	<input type="color" class="helion-color-picker-field" id="arcColor" value="#0000f0">
+	<span>Arc Color</span>
+</label>
+
+<label class="inline-field-container">
+	<input type="color" class="helion-color-picker-field" id="extensionColor" value="#800080">
+	<span>Extension Color</span>
+</label>
+
+<label class="inline-field-container">
+	<input type="color" class="helion-color-picker-field" id="extensionRadiiColor" value="#008000">
+	<span>Extension Radii Color</span>
+</label>
+
+
+<label>
+	<div>Line cap</div>
+	<select id="lineCap" class="helion-outlined-text-field">
+		<option value="butt">Butt</option>
+		<option value="round">Round</option>
+		<option value="square">Square</option>
+	</select>
+</label>
+
+<label>
+	<div>Line join</div>
+	<select id="lineJoin" class="helion-outlined-text-field">
+		<option value="round">Round</option>
+		<option value="bevel">Bevel</option>
+		<option value="miter">Miter</option>
+	</select>
+</label>
+<div style="height: 30%;"></div>

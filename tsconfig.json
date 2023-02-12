@@ -1,0 +1,24 @@
+{
+	"compilerOptions": {
+		"rootDir": "src",
+		"outDir": "dst",
+		
+		"module": "ESNext",
+		"target": "ES2020",
+
+		"moduleResolution": "nodenext",
+		
+		"strictNullChecks": true,
+		"noImplicitThis": true,
+		"noImplicitReturns": true,
+		"noUncheckedIndexedAccess": true,
+		"alwaysStrict": true,
+
+		"skipDefaultLibCheck": true,
+		"importsNotUsedAsValues": "preserve",
+
+		"lib": ["ES2020", "DOM", "DOM.Iterable"],
+
+		"baseUrl": ".",
+	}
+}
