@@ -26,7 +26,7 @@ document.body.innerHTML = /*html*/`
 <helion-standard-view class="helion-fill-parent">
 	<helion-app-bar slot="header" center-title="">
 		<helion-app-bar-left>
-			<a class="helion-app-bar-icon-button" href="/">
+			<a class="helion-app-bar-icon-button" href="/" title="Home">
 				${fa5_solid_angleLeft}
 			</a>
 		</helion-app-bar-left>
