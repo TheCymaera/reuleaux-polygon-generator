@@ -1,7 +1,7 @@
 import { Renderer } from "../reuleaux/renderer.js";
 import * as reuleaux from "../reuleaux/maths.js";
-import sidebarHTML from "./sidebar.html";
-import infoHTML from "./info.html";
+import sidebarHTML from "./sidebar.html?raw";
+import infoHTML from "./info.html?raw";
 import "./main.css";
 
 import {} from "helion/core.js";
