@@ -3,29 +3,21 @@ import { Arc, Circle, Point } from "./maths.js";
 export class Renderer {
 	readonly ctx: CanvasRenderingContext2D;
 
-	readonly viewX = -10;
-	readonly viewY = -10;
-	readonly viewWidth = 10;
-	readonly viewHeight = 10;
-
-	readonly resX: number;
-	readonly resY: number;
+	viewX = -100;
+	viewY = -100;
+	viewWidth  = 100;
+	viewHeight = 100;
 
 	constructor(ctx: CanvasRenderingContext2D) {
 		this.ctx = ctx;
-		this.resize();
 	}
 
-	resize(viewX = this.viewX, viewY = this.viewY, viewWidth = this.viewWidth, viewHeight = this.viewHeight): this {
-		(this as any).viewX = viewX;
-		(this as any).viewY = viewY;
-		(this as any).viewWidth = viewWidth;
-		(this as any).viewHeight = viewHeight;
+	get resX() {
+		return this.ctx.canvas.width / this.viewWidth;
+	}
 
-		const canvas = this.ctx.canvas;
-		(this as any).resX = canvas.width / viewWidth;
-		(this as any).resY = canvas.height / viewHeight;
-		return this;
+	get resY() {
+		return this.ctx.canvas.height / this.viewHeight;
 	}
 
 	distanceX(x: number) {
