@@ -112,8 +112,6 @@
 	}
 </script>
 
-<br />
-
 <h2 class="font-bold text-xl my-4">Draw</h2>
 
 <ToggleSwitchField label="Manual" bind:checked={manualDraw} />

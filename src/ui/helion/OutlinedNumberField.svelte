@@ -22,7 +22,12 @@
 		<input 
 			type={type}
 			inputmode="numeric"
-			class="w-full p-2 border-[.08rem] border-divider rounded-md focus:outline-primary-500 focus:border-primary-500"
+			class="
+				w-full p-2 border-[.08rem] border-divider rounded-md 
+				outline-none 
+				outline-[3px] outline-offset-[-3px]
+				focus:outline-primary-500 focus:border-primary-500
+			"
 			disabled={readonly} 
 			placeholder="{placeholder || nullValue.toString()}"
 			bind:this={input} 

@@ -24,7 +24,7 @@
 		<h1 class="font-bold">Reuleaux Polygon Generator</h1>
 		<div></div>
 	</header>
-	<main class="relative grid grid-cols-[400px,auto] max-md:grid-rows-[1fr,1fr] max-md:grid-cols-[1fr] overflow-hidden z-0">
+	<main class="relative grid grid-cols-[400px,auto] max-md:grid-rows-[min(100vw,50%),1fr] max-md:grid-cols-[1fr] overflow-hidden z-0">
 		<side class="bg-surfaceContainer text-onSurfaceContainer max-md:order-[2] p-3 overflow-auto">
 			{#if canvas}
 				<Sidebar canvas={canvas} />
@@ -32,9 +32,11 @@
 		</side>
 
 		<div class="py-4 px-4 md:px-24 grid">
-			<AspectRatio aspectRatio={1}>
-				<canvas bind:this={canvas} class="bg-surfaceContainer text-onSurfaceContainer h-full w-full" />
-			</AspectRatio>
+			<div class="relative [&>*]:!absolute [&>*]:!inset-0">
+				<AspectRatio aspectRatio={1}>
+					<canvas bind:this={canvas} class="bg-surfaceContainer text-onSurfaceContainer w-full h-full" />
+				</AspectRatio>
+			</div>
 		</div>
 
 		<div class="absolute h-full right-0 w-min p-4 gap-4 flex flex-col pointer-events-none [&>*]:pointer-events-auto">

@@ -18,7 +18,11 @@
 
 <label class="flex flex-col {classes}">
 	<div class="pl-1">{label}</div>
-	<select class="w-full p-2 border-[.08rem] border-divider rounded-md focus:outline-primary-500 focus:border-primary-500 flex-1 {boxClasses}" bind:value={value} disabled={readonly} on:change={onChange}>
+	<select class="
+		w-full p-2 border-[.08rem] bg-transparent border-divider rounded-md flex-1 {boxClasses}
+		outline-none 
+		outline-[3px] outline-offset-[-3px]
+		focus:outline-primary-500 focus:border-primary-500" bind:value={value} disabled={readonly} on:change={onChange}>
 		{#each options as {value, label: text}}
 			<option class="bg-surfaceContainer" value={value}>{text}</option>
 		{/each}

@@ -52,9 +52,9 @@
 				{active && readonly ? "bg-divider !border-transparent" : ""}
 			"
 		>
-			<helion-checkbox-tick class="text-xs text-onPrimary" class:Tick_checked={active}>
+			<helion-checkbox-tick class="grid place-items-center text-xs text-onPrimary" class:Tick_checked={active}>
 				{#if checked !== "indeterminate"}
-					{@html fa5_solid_check}
+					<span class="grid place-items-center mt-[1px]">{@html fa5_solid_check}</span>
 				{:else}
 					{@html fa5_solid_minus}
 				{/if}
