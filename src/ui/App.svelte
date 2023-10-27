@@ -9,8 +9,8 @@
 
 	let infoDialogOpened = false;
 </script>
-<div class="grid grid-rows-[min-content,1fr] overflow-hidden">
-	<header class="grid grid-cols-[1fr,auto,1fr] items-center bg-surfaceContainer text-onSurfaceContainer overflow-hidden shadow-md z-10">
+<div class="grid grid-rows-[min-content,1fr] overflow-hidden z-0">
+	<header class="grid grid-cols-[1fr,auto,1fr] items-center bg-surfaceContainer text-onSurfaceContainer overflow-hidden shadow z-10">
 		<div>
 			<a href="/" title="Home" class="
 				text-lg grid place-items-center h-12 w-12 relative
